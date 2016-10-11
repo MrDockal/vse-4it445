@@ -13,7 +13,7 @@ export class ProductsPage extends Component {
 
   componentDidMount() {
     console.log('did mont');
-    axios('http://dev.backend.horato02.vse.handson.pro/api/products')
+    axios('http://dev.backend.xdocj07.vse.handson.pro/api/products')
       .then((response) => {
         console.log('response', response.data)
         this.setState({

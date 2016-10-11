@@ -1,28 +1,25 @@
 {
-  "name": "EshopProduct",
-  "plural": "products",
+  "name": "Category",
+  "plural": "Categories",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-    "title": {
+    "name": {
       "type": "string",
       "required": true
     },
-    "price": {
-      "type": "number"
-    },
-    "shortInfo": {
+    "description": {
       "type": "string"
     }
   },
   "validations": [],
   "relations": {
-    "categories": {
-      "type": "hasOne",
-      "model": "Category",
+    "eshopProducts": {
+      "type": "hasMany",
+      "model": "EshopProduct",
       "foreignKey": ""
     }
   },
